@@ -8,7 +8,7 @@
             "filament": "matte-pla"
         },
         "lilac-purple": {
-            "quantity": 1,
+            "quantity": 2,
             "brand": "bambu-lab",
             "material": "pla",
             "filament": "matte-pla"
@@ -38,6 +38,12 @@
             "filament": "matte-pla"
         },
         "sky-blue": {
+            "quantity": 1,
+            "brand": "bambu-lab",
+            "material": "pla",
+            "filament": "matte-pla"
+        },
+        "marine-blue": {
             "quantity": 1,
             "brand": "bambu-lab",
             "material": "pla",
