@@ -115,21 +115,21 @@ footer {
   font-size: 1rem;
 }
 
-.badge-container {
+.badges {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-left: 0.5rem;
+  flex-direction: column; 
+  gap: 0.3rem;
+  margin-top: 0.5rem;
 }
 
 .badge {
-  display: inline-block;
-  margin-left: 0.5rem;
-  padding: 0.2rem 0.5rem;
+  display: block;         
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
-  border-radius: 4px;
-  vertical-align: middle;
+  border-radius: 6px;
 }
 
 .badge.in-stock {
@@ -140,5 +140,4 @@ footer {
 .badge.out-stock {
   background: #ef4444;
   color: white;
-  margin-left: 0.25rem;
 }
