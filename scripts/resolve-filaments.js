@@ -12,7 +12,8 @@ const USER_AGENT = {
 }
 
 const resolved = {
-  last_updated: inventory.last_updated,
+  selection_last_updated: inventory.selection_last_updated,
+  page_last_updated: new Date().toISOString(),
   manufacturers: {}
 };
 
@@ -56,12 +57,17 @@ for (const [manufacturerId, items] of Object.entries(inventory.manufacturers)) {
       fcxyz_slug: item.fcxyz_slug,
       quantity: item.quantity,
 
-      name: swatch.name,
+      name: swatch.color_name,
       brand: swatch.manufacturer?.name,
-      material: swatch.material?.name,
-      hex: swatch.hex,
-      image: swatch.image,
-      url: `https://filamentcolors.xyz/${item.fcxyz_slug}/`
+      material: swatch.filament_type?.name,
+      hex: swatch.hex_color,
+      images: {
+        front: swatch.image_front,
+        back: swatch.image_back,
+        card: swatch.card_img
+      },
+      url: `https://filamentcolors.xyz/${item.fcxyz_slug}/`,
+      is_available: swatch.is_available
     };
   }).filter(Boolean);
 }
