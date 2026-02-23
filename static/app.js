@@ -71,6 +71,13 @@ document.querySelectorAll(".toggle-btn").forEach(btn => {
       });
       target.classList.remove("show");
     } else {
+      if (target.id === "out-stock" && target.children.length === 0) {
+        const msg = document.createElement("div");
+        msg.className = "empty-message";
+        msg.textContent = "No out of stock items to show.";
+        target.appendChild(msg);
+      }
+
       target.classList.add("show");
       target.style.maxHeight = target.scrollHeight + "px";
     }

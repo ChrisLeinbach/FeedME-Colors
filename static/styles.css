@@ -119,6 +119,7 @@ footer {
 
 .meta .name {
   font-size: 1rem;
+  text-transform: capitalize;
 }
 
 .badges {
@@ -139,12 +140,14 @@ footer {
   box-sizing: border-box;
 }
 
-.badge.in-stock {
-  background: #10b981;
-  color: white;
-}
-
 .badge.out-stock {
   background: #ef4444;
   color: white;
+}
+
+.empty-message {
+  padding: 1em;
+  font-style: italic;
+  color: #666;
+  text-align: center;
 }
