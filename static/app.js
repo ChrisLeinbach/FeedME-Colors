@@ -1,4 +1,4 @@
-fetch("colors_resolved.json")
+fetch("resolved_stock.json")
   .then(res => res.json())
   .then(data => {
     const inStockContainer = document.getElementById("in-stock");
