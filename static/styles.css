@@ -47,10 +47,6 @@ main {
   background: #1d4ed8;
 }
 
-.collapse {
-  display: none;
-}
-
 .swatch-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -131,8 +127,10 @@ footer {
   color: white;
 }
 
-.badge.out-stock {
-  background: #ef4444;
-  color: white;
-  margin-left: 0.25rem;
+.collapse {
+  display: none;
+}
+
+.collapse.show-default {
+  display: grid;
 }

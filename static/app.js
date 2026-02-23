@@ -21,17 +21,11 @@ fetch("colors_resolved.json")
       if (c.mfr_is_available) {
         badges.push('<span class="badge in-stock">Available from Manufacturer</span>');
       }
-      if (c.quantity === 0) {
-        badges.push('<span class="badge out-stock">Out of Stock</span>');
-      }
 
       meta.innerHTML = `
         <div class="line name"><strong>${c.name}</strong></div>
         <div class="line brand">${c.brand || ""} - ${c.material || ""}</div>
         <div class="line hex">Hex: #${c.hex}</div>
-        <div class="line mfr_link">
-          <a href="${c.mfr_url}" target="_blank">Store Page</a>
-        </div>
         <div class="badges">
           ${badges.join(" ")}
         </div>
@@ -56,6 +50,6 @@ fetch("colors_resolved.json")
 document.querySelectorAll(".toggle-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const target = document.getElementById(btn.dataset.target);
-    target.classList.toggle("collapse");
+    target.classList.toggle("show");
   });
 });
