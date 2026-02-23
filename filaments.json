@@ -1,0 +1,17 @@
+{
+    "last_updated": "2026-02-23",
+    "manufacturers": {
+        "170": [
+            {
+                "fcxyz_slug": "bambu-lab-matte-latte-brown-pla-3909",
+                "fcxyz_swatch_id": 3909,
+                "quantity": 1
+            },
+            {
+                "fcxyz_slug": "bambu-lab-matte-grass-green-pla-3915",
+                "fcxyz_swatch_id": 3915,
+                "quantity": 1
+            }
+        ]
+    }
+}
