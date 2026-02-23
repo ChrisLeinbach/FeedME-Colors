@@ -25,7 +25,7 @@ jobs:
           RELEASE=$(curl -s "$API")
 
           ASSET_URL=$(echo "$RELEASE" \
-            | jq -r '.assets[] | select(.name | test("filaments\\.db")) | .browser_download_url')
+            | jq -r '.assets[] | select(.name | test("filaments\\.db$")) | .browser_download_url')
 
           curl -L "$ASSET_URL" -o filaments.db
 
