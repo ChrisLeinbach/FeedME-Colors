@@ -66,7 +66,7 @@ for (const [manufacturerId, items] of Object.entries(inventory.manufacturers)) {
         back: swatch.image_back,
         card: swatch.card_img
       },
-      url: `https://filamentcolors.xyz/${item.fcxyz_slug}/`,
+      url: `https://filamentcolors.xyz/swatch/${item.fcxyz_slug}/`,
       is_available: swatch.is_available
     };
   }).filter(Boolean);
