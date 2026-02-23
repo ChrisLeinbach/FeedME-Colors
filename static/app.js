@@ -1,41 +1,52 @@
-fetch("colors_resolved.json")
-  .then(r => r.json())
+// Load JSON
+fetch("static/colors_resolved.json")
+  .then(res => res.json())
   .then(data => {
-    const container = document.getElementById("colors");
+    const inStockContainer = document.getElementById("in-stock");
+    const outStockContainer = document.getElementById("out-stock");
 
     const colors = Object.values(data.manufacturers).flat();
 
     colors.forEach(c => {
       const card = document.createElement("div");
-      card.className = "card" + (c.quantity === 0 ? " out" : "");
+      card.className = "card" + (c.is_available ? "" : " out");
 
-      const swatch = document.createElement("div");
-      swatch.className = "swatch";
-      swatch.style.background = c.hex;
+      // Use front image or fallback to color hex
+      const swatchDiv = document.createElement("div");
+      swatchDiv.className = "swatch";
+      if (c.images?.front) {
+        swatchDiv.style.backgroundImage = `url(${c.images.front})`;
+      } else {
+        swatchDiv.style.background = `#${c.hex}`;
+      }
 
       const meta = document.createElement("div");
       meta.className = "meta";
       meta.innerHTML = `
         <strong>${c.name}</strong>
-        ${c.material}<br>
-        In stock: ${c.quantity}
+        <span>${c.brand || ""} - ${c.material || ""}</span>
+        <span>Hex: #${c.hex}</span>
       `;
 
-      card.appendChild(swatch);
+      card.appendChild(swatchDiv);
       card.appendChild(meta);
 
-      if (c.quantity > 0) {
-        card.onclick = () => {
-          navigator.clipboard.writeText(c.fcxyz_swatch_id);
-          alert(`Copied swatch ID: ${c.fcxyz_swatch_id}`);
-        };
+      if (c.is_available) {
+        card.onclick = () => window.open(c.url, "_blank");
+        inStockContainer.appendChild(card);
+      } else {
+        outStockContainer.appendChild(card);
       }
-
-      container.appendChild(card);
     });
   })
   .catch(err => {
-    document.getElementById("colors").innerText =
-      "Failed to load color data.";
-    console.error(err);
+    console.error("Failed to load color data:", err);
   });
+
+// Toggle collapse
+document.querySelectorAll(".toggle-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const target = document.getElementById(btn.dataset.target);
+    target.classList.toggle("collapse");
+  });
+});

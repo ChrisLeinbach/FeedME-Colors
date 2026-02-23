@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Select Your Filament Color</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filament Color Picker</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Select a Filament Color</h1>
-    <p>Click a color to copy its ID</p>
+    <h1>Filament Color Picker</h1>
+    <p>Click a swatch to visit the filament page.</p>
   </header>
 
-  <main id="colors"></main>
+  <main>
+    <section>
+      <button class="toggle-btn" data-target="in-stock">In Stock Filament</button>
+      <div id="in-stock" class="swatch-grid collapse"></div>
+    </section>
+
+    <section>
+      <button class="toggle-btn" data-target="out-stock">Out of Stock Filament</button>
+      <div id="out-stock" class="swatch-grid collapse"></div>
+    </section>
+  </main>
 
   <footer>
     <small>
-      Colors provided by
+      Colors provided by 
       <a href="https://filamentcolors.xyz" target="_blank">FilamentColors.xyz</a>
     </small>
   </footer>
