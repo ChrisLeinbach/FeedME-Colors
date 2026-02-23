@@ -1,5 +1,5 @@
 // Load JSON
-fetch("static/colors_resolved.json")
+fetch("colors_resolved.json")
   .then(res => res.json())
   .then(data => {
     const inStockContainer = document.getElementById("in-stock");
