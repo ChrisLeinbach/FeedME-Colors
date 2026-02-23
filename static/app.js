@@ -10,30 +10,35 @@ fetch("colors_resolved.json")
       const card = document.createElement("div");
       card.className = "card" + (c.is_available ? "" : " out");
 
-      // Use front image or fallback to color hex
       const swatchDiv = document.createElement("div");
       swatchDiv.className = "swatch";
-      if (c.images?.front) {
-        swatchDiv.style.backgroundImage = `url(${c.images.front})`;
-      } else {
-        swatchDiv.style.background = `#${c.hex}`;
-      }
+      swatchDiv.style.background = `#${c.hex}`;
 
       const meta = document.createElement("div");
       meta.className = "meta";
+
+      const mfrBadge = c.mfr_is_available
+        ? `<span class="badge">Available from Manufacturer</span>`
+        : "";
+
       meta.innerHTML = `
-        <strong>${c.name}</strong>
-        <span>${c.brand || ""} - ${c.material || ""}</span>
-        <span>Hex: #${c.hex}</span>
+        <div class="line name"><strong>${c.name}</strong></div>
+        <div class="line brand">${c.brand || ""} - ${c.material || ""}</div>
+        <div class="line hex">Hex: #${c.hex}</div>
+        <div class="line mfr_link">
+          Product Page: <a href="${c.mfr_url}" target="_blank">View Manufacturer Page</a>
+          ${mfrBadge}
+        </div>
       `;
 
       card.appendChild(swatchDiv);
       card.appendChild(meta);
 
-      if (c.is_available) {
-        card.onclick = () => window.open(c.url, "_blank");
+      if (c.quantity > 0) {
+        card.onclick = () => window.open(c.fcxyz_url, "_blank");
         inStockContainer.appendChild(card);
       } else {
+        card.onclick = () => window.open(c.fcxyz_url, "_blank");
         outStockContainer.appendChild(card);
       }
     });
@@ -42,7 +47,6 @@ fetch("colors_resolved.json")
     console.error("Failed to load color data:", err);
   });
 
-// Toggle collapse
 document.querySelectorAll(".toggle-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const target = document.getElementById(btn.dataset.target);
