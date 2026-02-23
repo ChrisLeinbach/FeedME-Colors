@@ -3,13 +3,35 @@
     "manufacturers": {
         "170": [
             {
-                "fcxyz_slug": "bambu-lab-matte-latte-brown-pla-3909",
                 "fcxyz_swatch_id": 3909,
+                "quantity": 0
+            },
+            {
+                "fcxyz_swatch_id": 3915,
                 "quantity": 1
             },
             {
-                "fcxyz_slug": "bambu-lab-matte-grass-green-pla-3915",
-                "fcxyz_swatch_id": 3915,
+                "fcxyz_swatch_id": 2018,
+                "quantity": 1
+            },
+            {
+                "fcxyz_swatch_id": 1953,
+                "quantity": 1
+            },
+            {
+                "fcxyz_swatch_id": 1975,
+                "quantity": 2
+            },
+            {
+                "fcxyz_swatch_id": 2017,
+                "quantity": 1
+            },
+            {
+                "fcxyz_swatch_id": 2019,
+                "quantity": 1
+            },
+            {
+                "fcxyz_swatch_id": 3431,
                 "quantity": 1
             }
         ]

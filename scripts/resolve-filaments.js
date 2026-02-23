@@ -54,7 +54,7 @@ for (const [manufacturerId, items] of Object.entries(inventory.manufacturers)) {
 
     return {
       fcxyz_swatch_id: item.fcxyz_swatch_id,
-      fcxyz_slug: item.fcxyz_slug,
+      fcxyz_slug: swatch.slug,
       quantity: item.quantity,
 
       name: swatch.color_name,
@@ -66,7 +66,7 @@ for (const [manufacturerId, items] of Object.entries(inventory.manufacturers)) {
         back: swatch.image_back,
         card: swatch.card_img
       },
-      fcxyz_url: `https://filamentcolors.xyz/swatch/${item.fcxyz_slug}/`,
+      fcxyz_url: `https://filamentcolors.xyz/swatch/${swatch.slug}/`,
       mfr_url: swatch.mfr_purchase_link,
       mfr_is_available: swatch.is_available
     };
