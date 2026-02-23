@@ -115,6 +115,13 @@ footer {
   font-size: 1rem;
 }
 
+.badge-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+}
+
 .badge {
   display: inline-block;
   margin-left: 0.5rem;

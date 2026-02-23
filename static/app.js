@@ -31,7 +31,9 @@ fetch("colors_resolved.json")
         <div class="line hex">Hex: #${c.hex}</div>
         <div class="line mfr_link">
           <a href="${c.mfr_url}" target="_blank">View Manufacturer Page</a>
-          ${badges.join(" ")}
+          <div class="badge-container">
+            ${badges.join(" ")}
+          </div>
         </div>
       `;
 
