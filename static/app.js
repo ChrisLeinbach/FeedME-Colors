@@ -4,7 +4,16 @@ fetch("colors_resolved.json")
     const inStockContainer = document.getElementById("in-stock");
     const outStockContainer = document.getElementById("out-stock");
 
-    const colors = Object.values(data.manufacturers).flat();
+    const colors = Object.values(data.stock).map(c => {
+      return {
+        quantity: c.quantity,
+        hex: c.variant_data.color_hex.replace(/^#/, ""),
+        name: c.variant_data.color_name.replace(/_/g, " "),
+        brand: c.brand_data.name,
+        material: c.material_data.material,
+        filament: c.filament_data.name
+      };
+    });
 
     colors.forEach(c => {
       const card = document.createElement("div");
@@ -18,10 +27,7 @@ fetch("colors_resolved.json")
       meta.className = "meta";
 
       const badges = [];
-      if (c.mfr_is_available) {
-        badges.push('<span class="badge in-stock">Available from Manufacturer</span>');
-      }
-      if (c.quantity === 0) {
+      if (c.quantity < 1) {
         badges.push('<span class="badge out-stock">Out of Stock</span>');
       }
 
@@ -38,10 +44,8 @@ fetch("colors_resolved.json")
       card.appendChild(meta);
 
       if (c.quantity > 0) {
-        card.onclick = () => window.open(c.fcxyz_url, "_blank");
         inStockContainer.appendChild(card);
       } else {
-        card.onclick = () => window.open(c.fcxyz_url, "_blank");
         outStockContainer.appendChild(card);
       }
     });

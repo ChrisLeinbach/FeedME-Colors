@@ -19,13 +19,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Download latest filaments.db
+        run: |
+          API="https://api.github.com/repos/OpenFilamentCollective/open-filament-database/releases/latest"
+          RELEASE=$(curl -s "$API")
+
+          ASSET_URL=$(echo "$RELEASE" \
+            | jq -r '.assets[] | select(.name | test("filaments\\.db")) | .browser_download_url')
+
+          curl -L "$ASSET_URL" -o filaments.db
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          node-version: "20"
+          python-version: "3.12"
 
       - name: Generate resolved JSON
-        run: node scripts/resolve-filaments.js
+        run: python scripts/resolve-filaments.py
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
