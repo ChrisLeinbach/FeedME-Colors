@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', system-ui, sans-serif;
@@ -117,19 +123,20 @@ footer {
 
 .badges {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: 0.3rem;
   margin-top: 0.5rem;
 }
 
 .badge {
-  display: block;         
+  display: block;          
   width: 100%;
   text-align: center;
   padding: 0.3rem 0.5rem;
   font-size: 0.75rem;
   font-weight: 600;
   border-radius: 6px;
+  box-sizing: border-box;
 }
 
 .badge.in-stock {
