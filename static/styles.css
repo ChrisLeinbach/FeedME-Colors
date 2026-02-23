@@ -110,15 +110,11 @@ footer {
 .meta .line {
   display: block;
   margin-bottom: 0.25rem;
-}
-
-.meta .hex {
   font-weight: 500;
-  color: #555;
 }
 
 .meta .name {
-  font-size: 1rem;
+  
   text-transform: capitalize;
 }
 
