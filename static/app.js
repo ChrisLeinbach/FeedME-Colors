@@ -1,4 +1,3 @@
-// Load JSON
 fetch("colors_resolved.json")
   .then(res => res.json())
   .then(data => {
