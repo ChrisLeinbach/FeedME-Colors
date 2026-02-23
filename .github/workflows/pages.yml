@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
   schedule:
-    - cron: "0 0 1 * *"
+    - cron: "0 0 * * 1"
 
 permissions:
   contents: read
@@ -25,7 +25,10 @@ jobs:
           node-version: "20"
 
       - name: Generate resolved JSON
-        run: node resolve-filaments.js
+        run: cat filaments.json
+
+      - name: Generate resolved JSON
+        run: node scripts/resolve-filaments.js
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

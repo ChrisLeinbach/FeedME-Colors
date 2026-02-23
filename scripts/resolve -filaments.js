@@ -67,6 +67,6 @@ for (const [manufacturerId, items] of Object.entries(inventory.manufacturers)) {
 }
 
 fs.writeFileSync(
-  "colors_resolved.json",
+  "static/colors_resolved.json",
   JSON.stringify(resolved, null, 2)
 );
