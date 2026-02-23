@@ -25,9 +25,6 @@ jobs:
           node-version: "20"
 
       - name: Generate resolved JSON
-        run: cat filaments.json
-
-      - name: Generate resolved JSON
         run: node scripts/resolve-filaments.js
 
       - name: Upload Pages artifact
