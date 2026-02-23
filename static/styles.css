@@ -146,8 +146,14 @@ footer {
 }
 
 .empty-message {
-  padding: 1em;
+  width: 100%;            
+  padding: 1.2em;           
+  background-color: #f9f9f9;
+  border: 2px dashed #ccc;
+  border-radius: 8px;      
+  text-align: center;        
   font-style: italic;
-  color: #666;
-  text-align: center;
+  color: #555;       
+  box-sizing: border-box;
+  margin-bottom: 0.5em;
 }

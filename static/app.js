@@ -33,7 +33,7 @@ fetch("resolved_stock.json")
 
       meta.innerHTML = `
         <div class="line name"><strong>${c.name}</strong></div>
-        <div class="line brand">${c.brand || ""} - ${c.material || ""}</div>
+        <div class="line brand">${c.brand || ""} - ${c.filament || ""}</div>
         <div class="line hex">Hex: #${c.hex}</div>
         <div class="badges">
           ${badges.join("")}
