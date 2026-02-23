@@ -46,12 +46,30 @@ fetch("colors_resolved.json")
         outStockContainer.appendChild(card);
       }
     });
+
+    document.querySelectorAll(".swatch-grid").forEach(grid => {
+      if (!grid.classList.contains("show")) {
+        grid.style.maxHeight = "0px";
+      } else {
+        grid.style.maxHeight = grid.scrollHeight + "px";
+      }
+    });
   })
   .catch(err => console.error("Failed to load color data:", err));
 
 document.querySelectorAll(".toggle-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const target = document.getElementById(btn.dataset.target);
-    target.classList.toggle("show");
+
+    if (target.classList.contains("show")) {
+      target.style.maxHeight = target.scrollHeight + "px";
+      requestAnimationFrame(() => {
+        target.style.maxHeight = "0px";
+      });
+      target.classList.remove("show");
+    } else {
+      target.classList.add("show");
+      target.style.maxHeight = target.scrollHeight + "px";
+    }
   });
 });

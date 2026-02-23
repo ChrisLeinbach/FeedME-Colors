@@ -59,7 +59,7 @@ main {
 }
 
 .swatch-grid.show {
-  max-height: 2000px;
+  max-height: none;
 }
 
 .card {
