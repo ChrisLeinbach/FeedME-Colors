@@ -111,10 +111,10 @@ footer {
   display: block;
   margin-bottom: 0.25rem;
   font-weight: 500;
+  color: #555;
 }
 
 .meta .name {
-  
   text-transform: capitalize;
 }
 
