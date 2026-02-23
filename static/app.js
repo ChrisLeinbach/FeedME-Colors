@@ -4,6 +4,13 @@ fetch("resolved_stock.json")
     const inStockContainer = document.getElementById("in-stock");
     const outStockContainer = document.getElementById("out-stock");
 
+    const updateInfo = document.getElementById("update-info");
+    if (updateInfo) {
+      updateInfo.innerHTML = `
+        <div>Page Last Updated: ${data.page_last_updated}</div>
+      `;
+    }
+
     const colors = Object.values(data.stock).map(c => {
       return {
         quantity: c.quantity,
