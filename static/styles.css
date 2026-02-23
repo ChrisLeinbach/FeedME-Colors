@@ -52,6 +52,14 @@ main {
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 1rem;
   margin-top: 0.5rem;
+
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+.swatch-grid.show {
+  max-height: 2000px;
 }
 
 .card {
@@ -84,11 +92,6 @@ main {
 .meta strong {
   display: block;
   margin-bottom: 0.25rem;
-}
-
-.out {
-  opacity: 0.5;
-  cursor: default;
 }
 
 footer {
@@ -127,10 +130,8 @@ footer {
   color: white;
 }
 
-.collapse {
-  display: none;
-}
-
-.collapse.show-default {
-  display: grid;
+.badge.out-stock {
+  background: #ef4444;
+  color: white;
+  margin-left: 0.25rem;
 }

@@ -21,12 +21,16 @@ fetch("colors_resolved.json")
       if (c.mfr_is_available) {
         badges.push('<span class="badge in-stock">Available from Manufacturer</span>');
       }
+      if (c.quantity === 0) {
+        badges.push('<span class="badge out-stock">Out of Stock</span>');
+      }
 
       meta.innerHTML = `
         <div class="line name"><strong>${c.name}</strong></div>
         <div class="line brand">${c.brand || ""} - ${c.material || ""}</div>
         <div class="line hex">Hex: #${c.hex}</div>
-        <div class="badges">
+        <div class="line mfr_link">
+          <a href="${c.mfr_url}" target="_blank">View Manufacturer Page</a>
           ${badges.join(" ")}
         </div>
       `;
@@ -43,9 +47,7 @@ fetch("colors_resolved.json")
       }
     });
   })
-  .catch(err => {
-    console.error("Failed to load color data:", err);
-  });
+  .catch(err => console.error("Failed to load color data:", err));
 
 document.querySelectorAll(".toggle-btn").forEach(btn => {
   btn.addEventListener("click", () => {
