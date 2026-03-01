@@ -1,8 +1,8 @@
 {
-    "selection_last_updated": "2026-02-23",
+    "selection_last_updated": "2026-03-01",
     "stock": {
         "charcoal": {
-            "quantity": 0,
+            "quantity": 2,
             "brand": "bambu-lab",
             "material": "pla",
             "filament": "matte-pla"
@@ -26,7 +26,7 @@
             "filament": "matte-pla"
         },
         "dark-red": {
-            "quantity": 1,
+            "quantity": 0,
             "brand": "bambu-lab",
             "material": "pla",
             "filament": "matte-pla"
@@ -44,6 +44,18 @@
             "filament": "matte-pla"
         },
         "marine-blue": {
+            "quantity": 1,
+            "brand": "bambu-lab",
+            "material": "pla",
+            "filament": "matte-pla"
+        },
+        "latte-brown": {
+            "quantity": 1,
+            "brand": "bambu-lab",
+            "material": "pla",
+            "filament": "matte-pla"
+        },
+        "lemon-yellow": {
             "quantity": 1,
             "brand": "bambu-lab",
             "material": "pla",
