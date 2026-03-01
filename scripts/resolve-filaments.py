@@ -3,7 +3,7 @@ import sqlite3
 from datetime import datetime
 
 conn = sqlite3.connect('filaments.db')
-conn.row_factory = sqlite3.Row 
+conn.row_factory = sqlite3.Row
 cursor = conn.cursor()
 
 with open('filament_stock.json', 'r') as stock_file_handle:
@@ -11,7 +11,8 @@ with open('filament_stock.json', 'r') as stock_file_handle:
 
 stock_data['page_last_updated'] = datetime.now().strftime("%B %d, %Y, %I:%M %p")
 
-for filament_slug, filament_dict in stock_data['stock'].items():
+for filament_dict in stock_data['stock']:
+    filament_slug = filament_dict['name']
     cursor.execute("SELECT * FROM brand WHERE slug = ?", (filament_dict["brand"],))
     row = cursor.fetchone()
     if row:

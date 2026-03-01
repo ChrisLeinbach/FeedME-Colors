@@ -11,7 +11,7 @@ fetch("resolved_stock.json")
       `;
     }
 
-    const colors = Object.values(data.stock).map(c => {
+    const colors = data.stock.map(c => {
       return {
         quantity: c.quantity,
         hex: c.variant_data.color_hex.replace(/^#/, ""),

@@ -1,65 +1,75 @@
 {
-    "selection_last_updated": "2026-03-01",
-    "stock": {
-        "charcoal": {
-            "quantity": 2,
-            "brand": "bambu-lab",
-            "material": "pla",
-            "filament": "matte-pla"
-        },
-        "lilac-purple": {
-            "quantity": 2,
-            "brand": "bambu-lab",
-            "material": "pla",
-            "filament": "matte-pla"
-        },
-        "mandarin-orange": {
-            "quantity": 1,
-            "brand": "bambu-lab",
-            "material": "pla",
-            "filament": "matte-pla"
-        },
-        "dark-blue": {
-            "quantity": 1,
-            "brand": "bambu-lab",
-            "material": "pla",
-            "filament": "matte-pla"
-        },
-        "dark-red": {
-            "quantity": 0,
-            "brand": "bambu-lab",
-            "material": "pla",
-            "filament": "matte-pla"
-        },
-        "grass-green": {
-            "quantity": 1,
-            "brand": "bambu-lab",
-            "material": "pla",
-            "filament": "matte-pla"
-        },
-        "sky-blue": {
-            "quantity": 1,
-            "brand": "bambu-lab",
-            "material": "pla",
-            "filament": "matte-pla"
-        },
-        "marine-blue": {
-            "quantity": 1,
-            "brand": "bambu-lab",
-            "material": "pla",
-            "filament": "matte-pla"
-        },
-        "latte-brown": {
-            "quantity": 1,
-            "brand": "bambu-lab",
-            "material": "pla",
-            "filament": "matte-pla"
-        },
-        "lemon-yellow": {
-            "quantity": 1,
-            "brand": "bambu-lab",
-            "material": "pla",
-            "filament": "matte-pla"
-        }
+  "selection_last_updated": "2026-03-01",
+  "stock": [
+    {
+      "name": "charcoal",
+      "quantity": 2,
+      "brand": "bambu-lab",
+      "material": "pla",
+      "filament": "matte-pla"
+    },
+    {
+      "name": "lilac-purple",
+      "quantity": 2,
+      "brand": "bambu-lab",
+      "material": "pla",
+      "filament": "matte-pla"
+    },
+    {
+      "name": "mandarin-orange",
+      "quantity": 1,
+      "brand": "bambu-lab",
+      "material": "pla",
+      "filament": "matte-pla"
+    },
+    {
+      "name": "dark-blue",
+      "quantity": 1,
+      "brand": "bambu-lab",
+      "material": "pla",
+      "filament": "matte-pla"
+    },
+    {
+      "name": "dark-red",
+      "quantity": 0,
+      "brand": "bambu-lab",
+      "material": "pla",
+      "filament": "matte-pla"
+    },
+    {
+      "name": "grass-green",
+      "quantity": 1,
+      "brand": "bambu-lab",
+      "material": "pla",
+      "filament": "matte-pla"
+    },
+    {
+      "name": "sky-blue",
+      "quantity": 1,
+      "brand": "bambu-lab",
+      "material": "pla",
+      "filament": "matte-pla"
+    },
+    {
+      "name": "marine-blue",
+      "quantity": 1,
+      "brand": "bambu-lab",
+      "material": "pla",
+      "filament": "matte-pla"
+    },
+    {
+      "name": "latte-brown",
+      "quantity": 1,
+      "brand": "bambu-lab",
+      "material": "pla",
+      "filament": "matte-pla"
+    },
+    {
+      "name": "lemon-yellow",
+      "quantity": 1,
+      "brand": "bambu-lab",
+      "material": "pla",
+      "filament": "matte-pla"
     }
+  ]
 }
