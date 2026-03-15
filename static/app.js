@@ -15,7 +15,7 @@ fetch("resolved_stock.json")
       return {
         quantity: c.quantity,
         hex: c.variant_data.color_hex.replace(/^#/, ""),
-        name: c.variant_data.color_name.replace(/_/g, " "),
+        name: c.variant_data.name.replace(/_/g, " "),
         brand: c.brand_data.name,
         material: c.material_data.material,
         filament: c.filament_data.name
