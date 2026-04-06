@@ -7,7 +7,7 @@ fetch("resolved_stock.json")
     const updateInfo = document.getElementById("update-info");
     if (updateInfo) {
       updateInfo.innerHTML = `
-        <div>Page Last Updated: ${data.page_last_updated}</div>
+        <div>Page Last Updated: ${data.page_last_updated} UTC</div>
       `;
     }
 
