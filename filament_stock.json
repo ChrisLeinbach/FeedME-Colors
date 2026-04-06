@@ -1,5 +1,5 @@
 {
-  "selection_last_updated": "2026-03-01",
+  "selection_last_updated": "2026-04-06",
   "stock": [
     {
       "name": "charcoal",
@@ -9,63 +9,63 @@
       "filament": "matte_pla"
     },
     {
-      "name": "lilac-purple",
+      "name": "lilac_purple",
       "quantity": 2,
       "brand": "bambu_lab",
       "material": "pla",
       "filament": "matte_pla"
     },
     {
-      "name": "mandarin-orange",
+      "name": "mandarin_orange",
       "quantity": 1,
       "brand": "bambu_lab",
       "material": "pla",
       "filament": "matte_pla"
     },
     {
-      "name": "dark-blue",
+      "name": "dark_blue",
       "quantity": 1,
       "brand": "bambu_lab",
       "material": "pla",
       "filament": "matte_pla"
     },
     {
-      "name": "dark-red",
+      "name": "dark_red",
       "quantity": 0,
       "brand": "bambu_lab",
       "material": "pla",
       "filament": "matte_pla"
     },
     {
-      "name": "grass-green",
+      "name": "grass_green",
       "quantity": 1,
       "brand": "bambu_lab",
       "material": "pla",
       "filament": "matte_pla"
     },
     {
-      "name": "sky-blue",
+      "name": "sky_blue",
       "quantity": 1,
       "brand": "bambu_lab",
       "material": "pla",
       "filament": "matte_pla"
     },
     {
-      "name": "marine-blue",
+      "name": "marine_blue",
       "quantity": 1,
       "brand": "bambu_lab",
       "material": "pla",
       "filament": "matte_pla"
     },
     {
-      "name": "latte-brown",
+      "name": "latte_brown",
       "quantity": 1,
       "brand": "bambu_lab",
       "material": "pla",
       "filament": "matte_pla"
     },
     {
-      "name": "lemon-yellow",
+      "name": "lemon_yellow",
       "quantity": 0,
       "brand": "bambu_lab",
       "material": "pla",
