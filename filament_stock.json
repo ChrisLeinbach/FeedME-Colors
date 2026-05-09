@@ -6,70 +6,70 @@
       "quantity": 1,
       "brand": "bambu_lab",
       "material": "pla",
-      "filament": "matte_pla"
+      "filament": "pla_matte"
     },
     {
       "name": "lilac_purple",
-      "quantity": 2,
+      "quantity": 1,
       "brand": "bambu_lab",
       "material": "pla",
-      "filament": "matte_pla"
+      "filament": "pla_matte"
     },
     {
       "name": "mandarin_orange",
       "quantity": 1,
       "brand": "bambu_lab",
       "material": "pla",
-      "filament": "matte_pla"
+      "filament": "pla_matte"
     },
     {
       "name": "dark_blue",
       "quantity": 1,
       "brand": "bambu_lab",
       "material": "pla",
-      "filament": "matte_pla"
+      "filament": "pla_matte"
     },
     {
       "name": "dark_red",
       "quantity": 0,
       "brand": "bambu_lab",
       "material": "pla",
-      "filament": "matte_pla"
+      "filament": "pla_matte"
     },
     {
       "name": "grass_green",
       "quantity": 1,
       "brand": "bambu_lab",
       "material": "pla",
-      "filament": "matte_pla"
+      "filament": "pla_matte"
     },
     {
       "name": "sky_blue",
       "quantity": 1,
       "brand": "bambu_lab",
       "material": "pla",
-      "filament": "matte_pla"
+      "filament": "pla_matte"
     },
     {
       "name": "marine_blue",
       "quantity": 1,
       "brand": "bambu_lab",
       "material": "pla",
-      "filament": "matte_pla"
+      "filament": "pla_matte"
     },
     {
       "name": "latte_brown",
       "quantity": 1,
       "brand": "bambu_lab",
       "material": "pla",
-      "filament": "matte_pla"
+      "filament": "pla_matte"
     },
     {
       "name": "lemon_yellow",
       "quantity": 0,
       "brand": "bambu_lab",
       "material": "pla",
-      "filament": "matte_pla"
+      "filament": "pla_matte"
     }
   ]
 }
