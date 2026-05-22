@@ -20,6 +20,9 @@ for filament_dict in stock_data['stock']:
         filament_dict['brand_id'] = brand_id
         filament_dict['brand_data'] = dict(row)
     else:
+        cursor.execute("SELECT * FROM brand")
+        available_brands = [dict(row) for row in cursor.fetchall()]
+        print(json.dumps(available_brands, indent=4))
         raise RuntimeError(f"Could not find brand with matching slug \'{filament_dict['brand']}\'.")
 
     cursor.execute("SELECT * FROM material WHERE brand_id = ? and slug = ?", (brand_id, filament_dict['material'],))
@@ -29,6 +32,9 @@ for filament_dict in stock_data['stock']:
         filament_dict['material_id'] = material_id
         filament_dict['material_data'] = dict(row)
     else:
+        cursor.execute("SELECT * FROM material WHERE brand_id = ?", (brand_id,))
+        available_materials = [dict(row) for row in cursor.fetchall()]
+        print(json.dumps(available_materials, indent=4))
         raise RuntimeError(f"Could not find material with matching slug \'{filament_dict['material']}\'.")
 
     cursor.execute("SELECT * FROM filament WHERE brand_id = ? and material_id = ? and slug = ?", (brand_id, material_id, filament_dict['filament'],))
@@ -38,6 +44,9 @@ for filament_dict in stock_data['stock']:
         filament_dict['filament_id'] = filament_id
         filament_dict['filament_data'] = dict(row)
     else:
+        cursor.execute("SELECT * FROM filament WHERE brand_id = ? and material_id = ?", (brand_id, material_id,))
+        available_filaments = [dict(row) for row in cursor.fetchall()]
+        print(json.dumps(available_filaments, indent=4))
         raise RuntimeError(f"Could not find filament with matching slug \'{filament_dict['filament']}\'.")
 
     cursor.execute("SELECT * FROM variant WHERE filament_id = ? and slug = ?", (filament_id, filament_slug, ))
@@ -47,6 +56,9 @@ for filament_dict in stock_data['stock']:
         filament_dict['variant_id'] = variant_id
         filament_dict['variant_data'] = dict(row)
     else:
+        cursor.execute("SELECT * FROM variant WHERE filament_id = ?", (filament_id, ))
+        available_variants = [dict(row) for row in cursor.fetchall()]
+        print(json.dumps(available_variants, indent=4))
         raise RuntimeError(f"Could not find variant with matching slug \'{filament_slug}\'.")
 
 with open('./static/resolved_stock.json', 'w') as resolved_file_handle:
