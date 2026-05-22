@@ -3,7 +3,7 @@
   "stock": [
     {
       "name": "charcoal",
-      "quantity": 1,
+      "quantity": 0,
       "brand": "bambu_lab",
       "material": "pla",
       "filament": "pla_matte"
