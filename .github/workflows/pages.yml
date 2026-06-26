@@ -38,7 +38,7 @@ jobs:
         run: python scripts/resolve-filaments.py
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v7
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./static/
 
