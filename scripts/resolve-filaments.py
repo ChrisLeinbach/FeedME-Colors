@@ -1,6 +1,6 @@
 import json
 import sqlite3
-from datetime import datetime
+from datetime import datetime, timezone
 
 conn = sqlite3.connect('filaments.db')
 conn.row_factory = sqlite3.Row
@@ -9,7 +9,7 @@ cursor = conn.cursor()
 with open('filament_stock.json', 'r') as stock_file_handle:
     stock_data = json.load(stock_file_handle)
 
-stock_data['page_last_updated'] = datetime.now().strftime("%B %d, %Y, %I:%M %p")
+stock_data['page_last_updated'] = datetime.now(timezone.utc).strftime("%B %d, %Y, %I:%M %p UTC")
 
 for filament_dict in stock_data['stock']:
     filament_slug = filament_dict['name']

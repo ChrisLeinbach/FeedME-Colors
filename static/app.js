@@ -6,8 +6,17 @@ fetch("resolved_stock.json")
 
     const updateInfo = document.getElementById("update-info");
     if (updateInfo) {
+      const localTime = new Date(data.page_last_updated).toLocaleString('en-US', {
+        month: 'long',
+        day: '2-digit',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true,
+        timeZoneName: 'short'
+      });
       updateInfo.innerHTML = `
-        <div>Page Last Updated: ${data.page_last_updated} UTC</div>
+        <div>Page Last Updated: ${localTime}</div>
       `;
     }
 
@@ -79,6 +88,14 @@ document.querySelectorAll(".toggle-btn").forEach(btn => {
       });
       target.classList.remove("show");
     } else {
+
+      if (target.id === "in-stock" && target.children.length === 0) {
+        const msg = document.createElement("div");
+        msg.className = "empty-message";
+        msg.textContent = "No in stock items to show.";
+        target.appendChild(msg);
+      }
+
       if (target.id === "out-stock" && target.children.length === 0) {
         const msg = document.createElement("div");
         msg.className = "empty-message";
