@@ -1,9 +1,9 @@
 {
-  "selection_last_updated": "2026-07-13",
+  "selection_last_updated": "2026-09-07",
   "stock": [
     {
       "name": "charcoal",
-      "quantity": 2,
+      "quantity": 1,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
@@ -17,7 +17,7 @@
     },
     {
       "name": "mandarin_orange",
-      "quantity": 1,
+      "quantity": 0,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
