@@ -3,14 +3,14 @@
   "stock": [
     {
       "name": "charcoal",
-      "quantity": 1,
+      "quantity": 0,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
     },
     {
       "name": "lilac_purple",
-      "quantity": 1,
+      "quantity": 0,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
