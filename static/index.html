@@ -18,13 +18,64 @@
     <div id="update-info" class="update-info"></div>
 
     <section>
+      <button class="toggle-btn" data-target="parts-info">About the Feeder</button>
+      <div id="parts-info" class="collapsible show">
+        <div class="parts-info">
+          <p>
+            <p style="color: #000;"><strong>Complete feeders are printed in a single color only. Extra parts are available from partial rolls</strong></p>
+            <p style="color: #000;"><strong>Expand the In Stock Filament Section below to see what colors are available.</strong></p>
+            A full FeedME feeder uses roughly 900 grams of filament of a 1,000 gram roll.
+            Below you can see what parts go into a standard feeder as well as extra parts that are available.
+          </p>
+
+          <div class="parts-subsection">
+            <button class="toggle-btn toggle-btn--sub" data-target="standard-parts">Standard Parts</button>
+            <div id="standard-parts" class="collapsible show">
+              <div id="parts-grid" class="parts-grid"></div>
+            </div>
+          </div>
+
+          <div class="parts-subsection">
+            <button class="toggle-btn toggle-btn--sub" data-target="extra-parts">Extra Parts</button>
+            <div id="extra-parts" class="collapsible">
+              <p class="parts-sub-note">
+                These parts are available on request (possibly at an extra cost) and are not
+                included with the standard feeder.
+              </p>
+              <div id="extra-parts-grid" class="parts-grid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <button class="toggle-btn" data-target="in-stock">In Stock Filament</button>
-      <div id="in-stock" class="swatch-grid show"></div>
+      <div id="in-stock" class="swatch-grid" data-empty="No in stock items to show.">
+        <p class="section-note">
+          Filament in this section is available for standard feeders.
+          Each standard feeder uses about 90% of a roll.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <button class="toggle-btn" data-target="partial-stock">Partial Rolls</button>
+      <div id="partial-stock" class="swatch-grid" data-empty="No partial rolls to show.">
+        <p class="section-note">
+          Partial rolls aren't enough for a standard feeder but they can be used for extra parts.
+        </p>
+      </div>
     </section>
 
     <section>
       <button class="toggle-btn" data-target="out-stock">Out of Stock Filament</button>
-      <div id="out-stock" class="swatch-grid"></div>
+      <div id="out-stock" class="swatch-grid" data-empty="No out of stock items to show.">
+        <p class="section-note">
+          <strong>No filament left.</strong>
+          These colors aren't available right now, so no feeders can be printed in them.
+        </p>
+      </div>
     </section>
   </main>
 

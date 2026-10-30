@@ -1,0 +1,16 @@
+{
+  "parts": [
+    { "id": "tip-foot",       "name": "Tip Foot",             "quantity": 2,    "grams": 11 },
+    { "id": "base",           "name": "Base",                 "quantity": 1,    "grams": 104 },
+    { "id": "small-segment",  "name": "1 Inch Body Segment",  "quantity": 3,    "grams": 63 },
+    { "id": "large-segment",  "name": "2 Inch Body Segment",  "quantity": 3,    "grams": 112 },
+    { "id": "top",            "name": "Top",                  "quantity": 1,    "grams": 80 },
+    { "id": "arm-link",       "name": "Arm Link",             "quantity": 6,    "grams": 9 },
+    { "id": "top-bracket-a",  "name": "Top Bracket Side A",   "quantity": 1,    "grams": 8 },
+    { "id": "top-bracket-b",  "name": "Top Bracket Side B",   "quantity": 1,    "grams": 6 },
+    { "id": "bowl-holder",    "name": "Bowl Holder",          "quantity": 1,    "grams": 20 }
+  ],
+  "extra_parts": [
+    { "id": "jumbo-segment",  "name": "6 Inch Body Segment",  "grams": 243 }
+  ]
+}

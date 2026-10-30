@@ -36,6 +36,10 @@ main {
 }
 
 .toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   width: 100%;
   text-align: left;
   font-size: 1.1rem;
@@ -163,4 +167,133 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+}
+
+.section-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0.9rem 1.1rem;
+  background: #e9edf3;
+  border: 1px solid #1f2937;
+  border-left-width: 6px;
+  border-radius: 8px;
+  font-size: 0.975rem;
+  line-height: 1.4;
+  color: #1f2937;
+}
+
+.section-note strong {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-size: 1rem;
+}
+
+.collapsible {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+.collapsible.show {
+  max-height: none;
+}
+
+.parts-info {
+  margin-top: 0.5rem;
+  padding: 1rem 1.25rem;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.parts-info p {
+  margin: 0 0 0.8rem;
+  color: #555;
+}
+
+.parts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 0.25rem 0.25rem 0.75rem;
+}
+
+.toggle-btn--sub {
+  margin: 0.75rem 0 0.4rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
+.toggle-btn--sub:hover {
+  background: #bfdbfe;
+}
+
+.parts-sub-note {
+  padding: 0 0.25rem;
+}
+
+.part-card,
+.part-card:hover {
+  cursor: default;
+  transform: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.part-image {
+  height: 120px;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.part-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.meta .total-line {
+  margin-top: 0.4rem;
+  color: #222;
+  font-weight: 700;
+}
+
+.toggle-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.toggle-hint {
+  font-size: 0.85rem;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.chevron {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-right: 2.5px solid currentColor;
+  border-bottom: 2.5px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.toggle-btn[aria-expanded="true"] .chevron {
+  transform: translateY(2px) rotate(-135deg);
+}
+
+.toggle-btn:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chevron {
+    transition: none;
+  }
 }
