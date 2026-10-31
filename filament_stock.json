@@ -52,28 +52,28 @@
     },
     {
       "name": "charcoal",
-      "quantity": 1.5,
+      "quantity": 3.5,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
     },
     {
       "name": "lilac_purple",
-      "quantity": 0.9,
+      "quantity": 2.9,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
     },
     {
       "name": "mandarin_orange",
-      "quantity": 0.25,
+      "quantity": 1.25,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
     },
     {
       "name": "dark_blue",
-      "quantity": 0.4,
+      "quantity": 1.4,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
