@@ -1,6 +1,55 @@
 {
-  "selection_last_updated": "2026-09-07",
+  "selection_last_updated": "2026-10-31",
   "stock": [
+    {
+      "name": "jade_white",
+      "quantity": 0.6,
+      "brand": "bambu_lab",
+      "material": "PLA",
+      "filament": "basic"
+    },
+    {
+      "name": "red",
+      "quantity": 0.8,
+      "brand": "bambu_lab",
+      "material": "PLA",
+      "filament": "basic"
+    },
+    {
+      "name": "pink",
+      "quantity": 0.2,
+      "brand": "bambu_lab",
+      "material": "PLA",
+      "filament": "basic"
+    },
+    {
+      "name": "light_gray",
+      "quantity": 0.7,
+      "brand": "bambu_lab",
+      "material": "PLA",
+      "filament": "basic"
+    },
+    {
+      "name": "sakura_pink",
+      "quantity": 0.9,
+      "brand": "bambu_lab",
+      "material": "PLA",
+      "filament": "matte"
+    },
+    {
+      "name": "sakura_pink",
+      "quantity": 0.9,
+      "brand": "bambu_lab",
+      "material": "PLA",
+      "filament": "matte"
+    },
+    {
+      "name": "ice_blue",
+      "quantity": 0.7,
+      "brand": "bambu_lab",
+      "material": "PLA",
+      "filament": "matte"
+    },
     {
       "name": "charcoal",
       "quantity": 1.5,
@@ -10,35 +59,35 @@
     },
     {
       "name": "lilac_purple",
-      "quantity": 0,
+      "quantity": 0.9,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
     },
     {
       "name": "mandarin_orange",
-      "quantity": 0,
+      "quantity": 0.25,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
     },
     {
       "name": "dark_blue",
-      "quantity": 0,
+      "quantity": 0.4,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
     },
     {
       "name": "dark_red",
-      "quantity": 1,
+      "quantity": 2.1,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
     },
     {
       "name": "grass_green",
-      "quantity": 1,
+      "quantity": 1.4,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
@@ -66,7 +115,7 @@
     },
     {
       "name": "lemon_yellow",
-      "quantity": 1,
+      "quantity": 1.25,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
