@@ -72,11 +72,11 @@ fetch("resolved_stock.json")
       const { full, partial } = splitQuantity(c.quantity);
 
       if (full >= 1) {
-        inStockContainer.appendChild(buildCard(c, `Rolls Available: ${full}`));
+        inStockContainer.appendChild(buildCard(c, `Rolls Available: ${full} (${full*1000}g)`));
       }
 
       if (partial > 0) {
-        partialContainer.appendChild(buildCard(c, `Partial Roll: ${partial}`));
+        partialContainer.appendChild(buildCard(c, `Partial Roll: ${partial} (${partial*1000}g)`));
       }
 
       // Only truly empty entries count as out of stock.
@@ -84,7 +84,7 @@ fetch("resolved_stock.json")
         outStockContainer.appendChild(
           buildCard(
             c,
-            `Rolls Available: 0`,
+            `Rolls Available: 0 (0g)`,
             '<span class="badge out-stock">Out of Stock</span>'
           )
         );
