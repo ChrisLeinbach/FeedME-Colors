@@ -38,13 +38,6 @@
       "filament": "matte"
     },
     {
-      "name": "sakura_pink",
-      "quantity": 0.9,
-      "brand": "bambu_lab",
-      "material": "PLA",
-      "filament": "matte"
-    },
-    {
       "name": "ice_blue",
       "quantity": 0.7,
       "brand": "bambu_lab",
