@@ -145,6 +145,11 @@ footer {
   color: white;
 }
 
+.badge.partial {
+  background: #ff712c;
+  color: white;
+}
+
 .empty-message {
   width: 100%;
   padding: 1.2em;

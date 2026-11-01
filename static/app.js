@@ -76,7 +76,12 @@ fetch("resolved_stock.json")
       }
 
       if (partial > 0) {
-        partialContainer.appendChild(buildCard(c, `Partial Roll: ${partial} (${(partial*1000).toLocaleString()}g)`));
+        partialContainer.appendChild(
+          buildCard(c,
+            `Partial Roll: ${partial} (${(partial*1000).toLocaleString()}g)`,
+            '<span class="badge partial">Extra Parts Only</span>'
+          )
+        );
       }
 
       // Only truly empty entries count as out of stock.
