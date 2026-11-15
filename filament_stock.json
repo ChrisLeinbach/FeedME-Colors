@@ -53,7 +53,7 @@
     {
       "name": "lilac_purple",
       "quantity": 0,
-      "reserved_quantity": 2.0
+      "reserved_quantity": 2.0,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
