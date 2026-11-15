@@ -1,5 +1,5 @@
 {
-  "selection_last_updated": "2026-11-07",
+  "selection_last_updated": "2026-11-15",
   "stock": [
     {
       "name": "jade_white",
@@ -52,7 +52,8 @@
     },
     {
       "name": "lilac_purple",
-      "quantity": 2.0,
+      "quantity": 0,
+      "reserved_quantity": 2.0
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
@@ -108,7 +109,8 @@
     },
     {
       "name": "lemon_yellow",
-      "quantity": 1.25,
+      "quantity": 0.25,
+      "reserved_quantity": 1,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
