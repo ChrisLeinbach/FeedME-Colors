@@ -1,5 +1,5 @@
 {
-  "selection_last_updated": "2026-11-15",
+  "selection_last_updated": "2026-11-17",
   "stock": [
     {
       "name": "jade_white",
@@ -52,7 +52,7 @@
     },
     {
       "name": "lilac_purple",
-      "quantity": 0,
+      "quantity": 2,
       "reserved_quantity": 2.0,
       "brand": "bambu_lab",
       "material": "PLA",
@@ -67,7 +67,7 @@
     },
     {
       "name": "dark_blue",
-      "quantity": 1.4,
+      "quantity": 2.4,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
@@ -81,21 +81,21 @@
     },
     {
       "name": "grass_green",
-      "quantity": 0.3,
+      "quantity": 2.3,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
     },
     {
       "name": "sky_blue",
-      "quantity": 0,
+      "quantity": 1,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
     },
     {
       "name": "marine_blue",
-      "quantity": 0.4,
+      "quantity": 2.4,
       "brand": "bambu_lab",
       "material": "PLA",
       "filament": "matte"
@@ -109,7 +109,7 @@
     },
     {
       "name": "lemon_yellow",
-      "quantity": 0.25,
+      "quantity": 2.25,
       "reserved_quantity": 1,
       "brand": "bambu_lab",
       "material": "PLA",
